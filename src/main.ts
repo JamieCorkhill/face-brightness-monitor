@@ -14,8 +14,8 @@ export function monitorFacePresence(
     // Indicates primary webcam.
     const CAPTURE_SOURCE = 0;
 
-    // Use a 50ms debounce speed
-    const PULL_DELAY = 50;
+    // Use a 250ms debounce time delay
+    const PULL_DELAY = 250;
 
     pullFrames(CAPTURE_SOURCE, PULL_DELAY, async frame => {
         const rects = detectFaces(frame);
