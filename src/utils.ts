@@ -53,7 +53,7 @@ export function pullFrames(
     // Pull a new frame on an interval.
     const interval = setInterval(() => {
         // An individual frame from the capture source.
-        let frame = capture.read();
+        const frame = capture.read();
 
         // Callback invocation for frame RX.
         onFrameRecieved(frame);
